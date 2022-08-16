@@ -1,0 +1,41 @@
+*{
+  font-family: "Roboto";
+}
+body{
+  background-image: url('D:\REACT\Todo\myapp\images\besplatnye-gradienty-i-primery-ih-realizatsii-v-dizajne.png');
+  background-size: cover;
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 30vh;
+  align-items: center;
+  background-color: #fff;
+  width: 50%;
+  height: 50%;
+  border-radius: 5px;
+}
+.btn-delete{
+  width: 10px;
+}
+h1{
+  margin: 20px;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(110,9,121,0.8407738095238095) 35%, rgba(0,212,255,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+li{
+  margin: 20px;
+}
+input{
+  height: 30px;
+  margin-right: 20px;
+  border-radius: 10px;
+  border: 0.5px solid transparent;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(110,9,121,0.8407738095238095) 35%, rgba(0,212,255,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
