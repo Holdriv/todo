@@ -17,8 +17,10 @@ body{
   height: 50%;
   border-radius: 5px;
 }
-.btn-delete{
-  width: 10px;
+.Btn{
+  width: 5px;
+  height: 28px;
+  box-sizing: border-box;
 }
 h1{
   margin: 20px;
@@ -38,4 +40,34 @@ input{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   
+}
+.todo-text{
+  font-size: 24px;
+  font-family: 'Lato';
+  font-weight: 500;
+  cursor: pointer;
+}
+.todo-text-strike{
+  text-decoration: line-through;
+  font-size: 24px;
+  font-family: 'Lato';
+  font-weight: 500;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.todo-item{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.todo-text-strike-color{
+  font-size: 24px;
+  font-family: 'Lato';
+  font-weight: 600;
+  text-decoration: line-through;
+  color: rgb(127, 80, 255);
+
+}
+.todo-item div{
+  margin-left: 80px;
 }

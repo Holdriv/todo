@@ -9,7 +9,8 @@ export default function TodoSave({newTask, setNewTask, addTask}) {
         type="text" 
         placeholder='ADD YOUR TASK' 
         value={newTask}
-        onChange={e=>setNewTask(e.target.value)}/>
+        onChange={e=>setNewTask(e.target.value)}
+        />
         <Button onClick={addTask} variant="contained" color="success">ADD</Button>
     </div>
   )

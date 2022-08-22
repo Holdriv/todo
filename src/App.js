@@ -9,7 +9,6 @@ import TodoSave from './Components/TodoSave';
 function App() {
   const[newTask, setNewTask]=useState("");
   const[todoBase, setTodoBase]=useState([]);
-
   const addTask=()=>{
     if(!newTask){
       alert('Enter new Task');
@@ -17,11 +16,11 @@ function App() {
     }
     const Task={
       id: Math.floor(Math.random()*1000),
-      description: newTask
+      description: newTask,
+      data: false
     }
     setTodoBase(oldList=>[...oldList, Task])
     setNewTask('');
-    console.log(todoBase);
   }
 
   const removeTask=(id)=>{
@@ -29,11 +28,26 @@ function App() {
     setTodoBase(newTodoBase)
   }
 
+  const toggleTask=(id)=>{
+    setTodoBase([...todoBase.map((todo)=>
+        todo.id === id ? {...todo, data: !todo.data}:{...todo}
+      )
+    ])
+  }
+
   return (
     <div className='App'>
         <Header/>
-        <TodoSave newTask={newTask} setNewTask={setNewTask} addTask={addTask}/>
-        <TodoList todoBase={todoBase} removeTask={removeTask}/>
+        <TodoSave 
+          newTask={newTask} 
+          setNewTask={setNewTask} 
+          addTask={addTask}
+          />
+        <TodoList 
+          todoBase={todoBase} 
+          removeTask={removeTask}
+          toggleTask={toggleTask}
+        />
     </div>
   );
 }
