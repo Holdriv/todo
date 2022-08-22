@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/todo/static/css/main.8cc9010b.css",
+    "main.js": "/todo/static/js/main.a30fe553.js",
+    "static/js/787.d3befce1.chunk.js": "/todo/static/js/787.d3befce1.chunk.js",
+    "static/media/besplatnye-gradienty-i-primery-ih-realizatsii-v-dizajne.png": "/todo/static/media/besplatnye-gradienty-i-primery-ih-realizatsii-v-dizajne.2bdab4c649b5b5e2ad5c.png",
+    "index.html": "/todo/index.html",
+    "main.8cc9010b.css.map": "/todo/static/css/main.8cc9010b.css.map",
+    "main.a30fe553.js.map": "/todo/static/js/main.a30fe553.js.map",
+    "787.d3befce1.chunk.js.map": "/todo/static/js/787.d3befce1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8cc9010b.css",
+    "static/js/main.a30fe553.js"
+  ]
+}
